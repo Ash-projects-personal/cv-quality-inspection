@@ -1,0 +1,20 @@
+{
+    "model": "YOLOv8-Custom",
+    "classes_detected": 14,
+    "training_images": 85000,
+    "metrics": {
+        "mAP_50": 0.973,
+        "mAP_50_95": 0.941,
+        "false_negative_rate_reduction": "12.4% -> 1.8%"
+    },
+    "inference": {
+        "engine": "TensorRT FP16",
+        "latency_ms": 38.1,
+        "target_fps": 26,
+        "production_line_fps": 22
+    },
+    "explainability": {
+        "method": "Grad-CAM",
+        "manual_override_reduction": "31% -> 9%"
+    }
+}
